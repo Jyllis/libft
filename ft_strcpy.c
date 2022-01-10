@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 12:55:33 by kone              #+#    #+#             */
-/*   Updated: 2021/11/20 13:06:18 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/10 13:14:33 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
+	char	*dest;
+
+	dest = dst;
 	while (*src)
 	{
 		*dst = *src;
@@ -25,5 +28,5 @@ char	*ft_strcpy(char *dst, const char *src)
 		src++;
 	}
 	*dst = *src;
-	return (dst);
+	return (dest);
 }

@@ -6,7 +6,7 @@
 #    By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/15 13:12:38 by jylikarp          #+#    #+#              #
-#    Updated: 2022/01/03 20:41:36 by kone             ###   ########.fr        #
+#    Updated: 2022/01/05 21:59:20 by kone             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ FLAGS = -Wall -Wextra -Werror
 
 AR = ar rcs
 
-SRCS =	ft_bzero.c \
+SRCS = 	ft_bzero.c \
 		ft_atoi.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
@@ -75,7 +75,7 @@ SRCS =	ft_bzero.c \
 		ft_strtrim.c \
 		ft_isspace.c \
 
-OBJS = $(SRCS:.c =.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
@@ -84,7 +84,7 @@ $(NAME):
 		$(AR) $(NAME) $(OBJS)
 
 clean:
-		$(RM) *.o 
+		$(RM) $(OBJS) 
 
 fclean: clean
 		$(RM) $(NAME)

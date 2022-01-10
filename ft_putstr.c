@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:50:44 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/15 15:47:16 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/10 13:04:41 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr(char const *s)
 	int	i;
 
 	i = 0;
-	while (*s)
+	while (s[i])
 	{
 		ft_putchar(s[i]);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 14:51:14 by kone              #+#    #+#             */
-/*   Updated: 2021/12/31 12:37:20 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/10 13:55:36 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,17 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*first;
-
 	if (!s)
 		return (NULL);
-	if (s)
+	while (*s)
 	{
-		while (*s != c)
-			s++;
-		if (*s == c)
+		if (*s == (char)c)
 		{
-			first = (char *)s;
-			return (first);
+			return ((char *)s);
 		}
+		s++;
 	}
+	if (*s == (char)c)
+		return ((char *)s);
 	return (NULL);
 }

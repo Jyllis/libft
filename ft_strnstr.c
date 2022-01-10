@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 12:29:08 by kone              #+#    #+#             */
-/*   Updated: 2021/12/31 12:49:51 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/07 14:00:55 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *from, const char *find, size_t n)
 	len = ft_strlen(find) - 1;
 	lenh = ft_strlen(from);
 	pos_h = 0;
-	if (len == 0)
+	if (len == 0 || (int)len == -1)
 		return ((char *)from);
 	while (from[pos_h] && len <= lenh && pos_h <= n)
 	{

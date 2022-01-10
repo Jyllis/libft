@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:58:08 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/22 16:04:53 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/10 13:16:45 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 void	ft_strdel(char **as)
 {
-	if (!(as))
+	if (as != NULL)
 	{
 		free(*as);
 		*as = NULL;

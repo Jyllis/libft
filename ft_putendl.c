@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 15:49:55 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/15 15:54:06 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/10 13:01:04 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,8 @@
 
 void	ft_putendl(char const *s)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
-	ft_putchar('\0');
+	if (s == NULL)
+		return ;
+	ft_putstr(s);
+	ft_putchar('\n');
 }

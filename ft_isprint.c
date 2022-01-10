@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 13:31:23 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/19 13:34:12 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/06 10:45:39 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** the function returns 1.
 */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
