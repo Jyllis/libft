@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 13:07:07 by kone              #+#    #+#             */
-/*   Updated: 2022/01/04 18:23:35 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/11 10:18:47 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,15 @@ char	*ft_strncpy(char *dst,	const char *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	while (i < len && src != NULL)
+	while (src[i] && i < len)
 	{
-		while (src[i] && i <= len)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		while (i < len)
-		{
-			dst[i] = '\0';
-			i++;
-		}
+		dst[i] = src[i];
+		i++;
+	}
+	while (i < len)
+	{
+		dst[i] = '\0';
+		i++;
 	}
 	return (dst);
 }

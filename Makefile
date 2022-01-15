@@ -6,7 +6,7 @@
 #    By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/15 13:12:38 by jylikarp          #+#    #+#              #
-#    Updated: 2022/01/05 21:59:20 by kone             ###   ########.fr        #
+#    Updated: 2022/01/15 23:18:25 by kone             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,9 +79,15 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
+
 $(NAME):
 		gcc $(FLAGS) -c $(SRCS)
 		$(AR) $(NAME) $(OBJS)
+
+so:
+		gcc $(FLAGS) -c $(SRCS)
+		gcc -nostartfiles -shared -o libft.so $(OBJS)
+
 
 clean:
 		$(RM) $(OBJS) 

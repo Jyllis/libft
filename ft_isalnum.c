@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 13:21:59 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/19 13:23:32 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/15 15:14:03 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,9 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z' )
+		|| (c >= '0' && c <= '9'))
+		return (1);
+	else
+		return (0);
 }

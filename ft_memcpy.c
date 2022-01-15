@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 12:23:07 by kone              #+#    #+#             */
-/*   Updated: 2021/11/27 12:41:44 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/15 14:45:48 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*from;
 
 	i = 0;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	from = (unsigned char *)src;
 	dst = (unsigned char *)dest;
 	while (i < n)

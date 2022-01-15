@@ -6,28 +6,44 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/11 14:57:51 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/12/31 13:09:27 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/15 21:03:55 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+static size_t	ft_start(char const *s)
 {
-	unsigned int	i;
-	unsigned int	j;
-	char			*newstr;
+	size_t	i;
 
 	i = 0;
-	j = ft_strlen(s);
+	while (s[i] == '\t' || s[i] == '\n' || s[i] == ' ')
+		i++;
+	return (i);
+}
+
+static size_t	ft_end(char const *s)
+{
+	size_t	i;
+
+	i = ft_strlen(s);
+	while (s[i] == '\t' || s[i] == '\n' || s[i] == ' ' || s[i] == '\0')
+		i--;
+	return (i);
+}
+
+char	*ft_strtrim(char const *s)
+{
+	size_t	i;
+	size_t	j;
+	char	*helper;
+
+	helper = "";
+	if (*s == '\0' || s == helper)
+		return (ft_strdup("\0"));
 	if (!s)
 		return (NULL);
-	while (ft_isspace(s[i]))
-		i++;
-	while (ft_isspace(s[j - 1]))
-		j--;
-	newstr = ft_strsub(s, i, j - i);
-	if (!newstr)
-		return (NULL);
-	return (newstr);
+	i = ft_start(s);
+	j = ft_end(s);
+	return (ft_strsub(s, i, j - i + 1));
 }

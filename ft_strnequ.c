@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 10:03:19 by kone              #+#    #+#             */
-/*   Updated: 2022/01/10 13:57:43 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/11 10:43:12 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n)
 	i = 0;
 	if (!s1 || !s2)
 		return (0);
-	while (*s1 && *s2 && i < n)
-	{
-		while (s1[i] == s2[i] || s1[i] != '\0' || s2[i] != '\0')
-			i++;
-		if (s1[i] == s2[i])
-			return (1);
-	}
+	if (n == 0)
+		return (1);
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < (n - 1))
+		i++;
+	if (s1[i] == s2[i])
+		return (1);
 	return (0);
 }

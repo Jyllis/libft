@@ -6,13 +6,13 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 14:37:04 by kone              #+#    #+#             */
-/*   Updated: 2021/12/31 13:08:05 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/10 17:00:35 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_wordlenght(char *s, char c)
+static int	ft_wordlength(char *s, char c)
 {
 	int	len;
 
@@ -61,10 +61,10 @@ char	**ft_strsplit(char const *s, char c)
 	{
 		while (*s == c && *s)
 			s++;
-		newstr[i] = ft_strsub(s, 0, ft_wordlenght((char *)s, c));
+		newstr[i] = ft_strsub(s, 0, ft_wordlength((char *)s, c));
 		if (!newstr[i])
 			return (NULL);
-		s = s + ft_wordlenght((char *)s, c);
+		s = s + ft_wordlength((char *)s, c);
 		i++;
 	}
 	newstr[i] = NULL;

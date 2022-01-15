@@ -6,7 +6,7 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 10:52:02 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/12/31 12:31:31 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/15 15:09:37 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (b == NULL)
-		return (NULL);
 	while (i < len)
 	{
 		((unsigned char *)b)[i] = c;

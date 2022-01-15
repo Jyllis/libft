@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:37:43 by kone              #+#    #+#             */
-/*   Updated: 2021/12/03 13:45:46 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/15 19:50:23 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncat(char *dest, const char *src, size_t n)
 
 	i = 0;
 	dest_len = ft_strlen(dest);
-	if (src && n > 0)
+	if (n > 0 && src[i] != '\0')
 	{
 		while (i < n && src[i])
 		{
