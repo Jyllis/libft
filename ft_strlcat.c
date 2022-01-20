@@ -6,11 +6,16 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:55:54 by kone              #+#    #+#             */
-/*   Updated: 2022/01/11 10:54:39 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 20:58:54 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Appends the NUL-terminated string src to the end of dst. It will append
+** at most size - strlen(dst) - 1 bytes, NUL-terminating the result.
+*/
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

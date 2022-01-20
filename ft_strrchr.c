@@ -6,11 +6,16 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 15:29:19 by kone              #+#    #+#             */
-/*   Updated: 2022/01/10 15:48:23 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 21:45:20 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The strrchr() function returns a pointer to the last occurrence 
+** of the character c in the string s.
+*/
 
 char	*ft_strrchr(const char *s, int c)
 {

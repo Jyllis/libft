@@ -6,11 +6,17 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 16:04:13 by kone              #+#    #+#             */
-/*   Updated: 2022/01/15 12:49:50 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 20:12:48 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Allocates and returns a "fresh" string ending with '\0' representing 
+** the integer n given as argument. If the allocation fails
+**  the function returns NULL.
+*/
 
 char	*ft_itoa(int n)
 {

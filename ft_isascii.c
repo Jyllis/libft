@@ -6,14 +6,15 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 13:27:08 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/19 13:29:09 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/17 19:55:13 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** If c is between int values 0 & 127, isasciii returns true = 1.
+** Checks if c is a 7-bit unsigned char value that fits into the ascii character
+** set (between values 0 & 127).
 */
 
 int	ft_isascii(int c)

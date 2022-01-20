@@ -6,17 +6,17 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/29 15:52:11 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/15 20:00:27 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 20:16:43 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* 
- * Function locates the first occurrence of c (converted to anunsigned char)
- * in string s. Returns a pointer to the byte located, or NULL if
- * no such byte exists within n bytes.
- */
+** Function locates the first occurrence of c (converted to anunsigned char)
+** in string s. Returns a pointer to the byte located, or NULL if
+** no such byte exists within n bytes.
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

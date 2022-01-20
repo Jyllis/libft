@@ -6,11 +6,16 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/18 10:57:48 by kone              #+#    #+#             */
-/*   Updated: 2021/12/31 12:48:45 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 21:50:42 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The strstr() function finds the first occurrence of the substring *find
+** in the string *from.  The terminating null bytes ('\0') are not compared.
+*/
 
 char	*ft_strstr(const char *from, const char *find)
 {

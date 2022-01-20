@@ -6,14 +6,14 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:48:31 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/17 19:36:07 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 20:24:44 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Writing to std output char c.
+** Writes character c to std output.
 */
 
 void	ft_putchar(char c)

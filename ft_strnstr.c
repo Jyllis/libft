@@ -6,11 +6,17 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 12:29:08 by kone              #+#    #+#             */
-/*   Updated: 2022/01/15 23:14:26 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 21:38:56 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Locates the first occurrence of the null-terminated string *find 
+** in the string *from where not more than len characters are searched. 
+** Characters that appear after a ‘\0’ character are not searched.
+*/
 
 char	*ft_strnstr(const char *from, const char *find, size_t n)
 {

@@ -6,9 +6,18 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/11 14:57:51 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/15 21:03:55 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/20 12:13:47 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc(3)) and returns a copy of the string given as
+** argument without whitespaces at the beginning or at the end of the string. 
+** The following characters Will be considered as whitespaces ’ ’, 
+** ’\n’ and ’\t’. If s has no whitespaces at the beginning or at the end,
+** the function returns a copy of s. 
+** If the allocation fails the function returns NULL.
+*/
 
 #include "libft.h"
 
@@ -39,10 +48,10 @@ char	*ft_strtrim(char const *s)
 	char	*helper;
 
 	helper = "";
-	if (*s == '\0' || s == helper)
-		return (ft_strdup("\0"));
 	if (!s)
 		return (NULL);
+	if (*s == '\0' || s == helper)
+		return (ft_strdup("\0"));
 	i = ft_start(s);
 	j = ft_end(s);
 	return (ft_strsub(s, i, j - i + 1));

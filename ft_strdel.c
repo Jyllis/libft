@@ -6,14 +6,14 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:58:08 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/10 13:16:45 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 20:46:28 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Takes as a parameter the address of a string that need to be
+** Takes as a parameter the address of a string that needs to be
 ** freed with free(3), then sets its pointer to NULL.
 */
 

@@ -6,14 +6,14 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 12:02:49 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/15 14:58:20 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 19:53:06 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** If isupper or islower returns true, then isalpha returns also true = 1.
+** Checks that if c is an alphabetic character.
 */
 
 int	ft_isalpha(int c)

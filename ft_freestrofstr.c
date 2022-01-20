@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isupper.c                                       :+:      :+:    :+:   */
+/*   ft_freestrofstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/19 11:41:51 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/17 20:06:23 by kone             ###   ########.fr       */
+/*   Created: 2022/01/20 12:59:28 by kone              #+#    #+#             */
+/*   Updated: 2022/01/20 13:13:51 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** Checks if c is a uppercase letter.
-*/
-
-int	ft_isupper(int c)
+void	ft_freestrofstr(char **strofstr)
 {
-	return (c >= 'A' && c <= 'Z');
+	int	i;
+
+	if (!strofstr)
+		return ;
+	while (strofstr[i] != 0)
+	{
+		free(strofstr[i]);
+		i++;
+	}
+	free(strofstr);
 }

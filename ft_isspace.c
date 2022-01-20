@@ -6,19 +6,20 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 12:37:35 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/22 13:08:26 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/17 20:04:42 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** If c is a whitespace/space character it returns true = 1.
+** Checks if c is a whitespace character. In the "C" and "POSIX" locales,
+** these are: space, form-feed ('\f'), newline ('\n'), carriage return ('\r'),
+** horizontal tab ('\t') and vertical tab ('\v').
 */
 
 int	ft_isspace(int c)
 {
-	c = (unsigned char)c;
 	return (c == '\t' || c == '\n' || c == '\v' || c == '\f'
 		|| c == '\r' || c == ' ');
 }

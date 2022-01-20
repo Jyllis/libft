@@ -6,11 +6,15 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 13:07:07 by kone              #+#    #+#             */
-/*   Updated: 2022/01/11 10:18:47 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 21:22:59 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copies at most n bytes from string pointed to by src.
+*/
 
 char	*ft_strncpy(char *dst,	const char *src, size_t len)
 {

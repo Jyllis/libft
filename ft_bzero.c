@@ -6,14 +6,15 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 09:45:23 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/22 10:31:55 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/17 19:48:46 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Because size_t is used in the prototype, we use it also for i.
-** While while loop is true we set the value of s[i] to be typecasted char 0
+/* 
+** Erases the data in the n bytes of the memory starting at the location
+** point to by s, by writing zeros (bytes containing '\0' to that area. 
 */
 
 void	ft_bzero(void *s, size_t n)

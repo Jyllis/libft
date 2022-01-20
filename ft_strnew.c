@@ -6,15 +6,16 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 15:32:33 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/22 15:47:27 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/17 21:30:37 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Creates a new string with the size of size +1
-** Fills it with \0
+** Allocates and returns a "fresh" string ending with \0. Each character
+** of the string is initialized at '\0'. If allocation fails the function
+** returns NULL.
 */
 
 char	*ft_strnew(size_t size)

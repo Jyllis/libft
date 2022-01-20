@@ -6,14 +6,14 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 11:49:31 by jylikarp          #+#    #+#             */
-/*   Updated: 2021/11/19 12:00:34 by jylikarp         ###   ########.fr       */
+/*   Updated: 2022/01/17 20:06:52 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** If c's int value is between a and z, islower returns true = 1.
+** Checks If c is a lowercase letter.
 */
 
 int	ft_islower(int c)

@@ -6,17 +6,11 @@
 #    By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/15 13:12:38 by jylikarp          #+#    #+#              #
-#    Updated: 2022/01/15 23:18:25 by kone             ###   ########.fr        #
+#    Updated: 2022/01/20 13:40:30 by kone             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-
-RM = rm -f
-
-FLAGS = -Wall -Wextra -Werror
-
-AR = ar rcs
 
 SRCS = 	ft_bzero.c \
 		ft_atoi.c \
@@ -74,20 +68,24 @@ SRCS = 	ft_bzero.c \
 		ft_strsplit.c \
 		ft_strtrim.c \
 		ft_isspace.c \
+		ft_freestrofstr.c \
+
+RM = rm -f
+
+AR = ar rcs
+
+FLAGS = -Wall -Wextra -Werror
 
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
-
 
 $(NAME):
 		gcc $(FLAGS) -c $(SRCS)
 		$(AR) $(NAME) $(OBJS)
 
 so:
-		gcc $(FLAGS) -c $(SRCS)
 		gcc -nostartfiles -shared -o libft.so $(OBJS)
-
 
 clean:
 		$(RM) $(OBJS) 

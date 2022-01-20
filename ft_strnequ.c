@@ -6,11 +6,17 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 10:03:19 by kone              #+#    #+#             */
-/*   Updated: 2022/01/11 10:43:12 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 21:24:37 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Lexicographical comparison between s1 and s2 up to n characters
+** or until a ’\0’ is reached. If the 2 strings are identical, 
+** the function returns 1, or 0 otherwise.
+*/
 
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {

@@ -6,15 +6,15 @@
 /*   By: jylikarp <jylikarp@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 13:31:23 by jylikarp          #+#    #+#             */
-/*   Updated: 2022/01/06 10:45:39 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/17 19:59:43 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** If c's ascii value is between 32 & 126 (meaning printable character)
-** the function returns 1.
+** Checks if c is a printable character (including space). 
+** Ascii value 32 through 126.
 */
 
 int	ft_isprint(int c)
