@@ -6,7 +6,7 @@
 /*   By: kone <jylikarp@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 12:59:28 by kone              #+#    #+#             */
-/*   Updated: 2022/01/20 13:13:51 by kone             ###   ########.fr       */
+/*   Updated: 2022/01/24 11:56:24 by kone             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	ft_freestrofstr(char **strofstr)
 {
 	int	i;
 
+	i = 0;
 	if (!strofstr)
 		return ;
 	while (strofstr[i] != 0)
