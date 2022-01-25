@@ -47,7 +47,7 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strstr(const char *from, const char *find);
-char	*ft_strnstr(const char *from, const char *find, size_t n);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strtrim(char const *s);
 void	ft_bzero(void *s, size_t n);
